@@ -1,26 +1,64 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+
+import { Card } from 'react-bootstrap';
+
+import './assets/styles/global.css';
+
+import PokemonInterface from './assets/apis/pokemonInterface';
+import api from './assets/apis/api';
+
+import PageButtons from './assets/pages/pageButtons';
+import PageHeader from './assets/pages/pageHeader';
+
+
+let pokem: PokemonInterface[]
 
 function App() {
+
+  const [pokemons, setPokemons] = useState();
+  
+
+  useEffect(() => {
+
+    api.get('/Biuni/PokemonGO-Pokedex/master/pokedex.json').then(res => {
+
+      setPokemons(res.data.pokemon)
+      pokem = res.data.pokemon
+
+    })
+
+  }, [pokemons])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <div id="app">
+
+      <PageHeader />
+
+      <PageButtons />
+
+      <div className="pokemons-card">
+
+        {pokem?.map((p) => (
+
+          <Card.Body>
+
+            <Card.Img src={p.img} />
+            <Card.Title>{p.name}</Card.Title>
+            <Card.Text>Type: {p.type}</Card.Text>
+            <Card.Text>Height: {p.height}</Card.Text>
+            <Card.Text>Weight: {p.weight}</Card.Text>
+
+          </Card.Body>
+
+        ))}
+
+      </div>
+
+    </div >
+
   );
+
 }
 
 export default App;

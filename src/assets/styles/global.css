@@ -1,0 +1,45 @@
+* {
+
+    text-align: center;
+    max-width: 100vw;
+
+}
+
+body {
+
+    background: #282c34;
+    max-width: 100vw;
+
+}
+
+.pokemons-card {
+
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.card-body {
+
+    background-color: white;
+    width: 265px;
+    height: 250px;
+    border-radius: 40px;
+    margin: 20px 50px;
+
+}
+
+.card-title {
+
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+.card-text {
+
+    margin: 5px auto;
+    
+}

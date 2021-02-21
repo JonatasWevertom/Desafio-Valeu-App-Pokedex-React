@@ -1,0 +1,149 @@
+.buttons-container {
+
+    border-top: 1px solid rgba(27, 123, 168, 0.63);
+    border-bottom: 1px solid rgba(27, 123, 168, 0.63);
+    width: 90%;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 30px;
+
+}
+
+.buttons-container button {
+
+    cursor: pointer;
+    width: 138px;
+    height: 52px;
+    border-radius: 50px;
+    font: 700 1.3rem Segoe UI;
+    color: white;
+    margin: 1%;
+    border: none;
+
+}
+
+.buttons-container button:first-child {
+
+    color: black;
+
+}
+
+.NORMAL {
+
+    background-color: white;
+
+}
+
+.FIGTHING {
+
+    background-color: rgb(197, 76, 32);
+
+}
+
+.FLYING {
+
+    background-color: rgb(27, 128, 196);
+
+}
+
+.POISON {
+
+    background-color: rgb(110, 41, 201);
+
+}
+
+.GROUND {
+
+    background-color: rgb(110, 114, 53);
+
+}
+
+.ROCK {
+
+    background-color: rgb(92, 64, 41);
+
+}
+
+.BUG {
+
+    background-color: rgb(57, 172, 34);
+
+}
+
+.GHOST {
+
+    background-color: rgb(119, 52, 128);
+
+}
+
+.STEEL {
+
+    background-color: gray;
+
+}
+
+.FIRE {
+
+    background-color: red;
+
+}
+
+.WATER {
+
+    background-color: blue;
+
+}
+
+.GRASS {
+
+    background-color: rgb(89, 109, 57);
+
+}
+
+.ELETRIC {
+
+    background-color: rgba(255, 255, 0, 0.719);
+
+}
+
+.PSYCHIC {
+
+    background-color: rgb(49, 5, 85);
+
+}
+
+.ICE {
+
+    background-color: rgba(0, 255, 255, 0.575);
+
+}
+
+.DRAGON {
+
+    background-color: rgba(255, 166, 0, 0.788);
+
+}
+
+.DARK {
+
+    background-color: rgba(0, 0, 0, 0.719);
+
+}
+
+.FAIRY {
+
+    background-color: rgb(192, 95, 111);
+
+}
+
+.SHADOW {
+
+    background-color: rgb(66, 66, 66);
+
+}
+
+.UNKNOWN {
+
+    background-color: rgb(179, 177, 177);
+    
+}
