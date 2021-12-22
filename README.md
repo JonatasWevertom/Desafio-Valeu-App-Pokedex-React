@@ -1,5 +1,9 @@
 # Desafio de estágio - Valeu App
 
+### Primeiro passo voce deve dar um `git clone` para clonar o projeto, em seguida você deve dar um `npm install` para instalar as dependencias, e por fim deve dar um `npm start` para rodar o projeto em seu navegador.
+
+##
+
 O desafio contará com um sistema de gamificacão, ou seja, cada funcionalidade receberá uma pontuacão e o objetivo será alcancar o maior número de pontos possível.  
 
 Deverá ser criada uma lista de pokemons (PokeDex) de acordo com as seguintes especificacões:
